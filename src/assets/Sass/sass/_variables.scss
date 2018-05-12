@@ -1,0 +1,128 @@
+.header{
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to right, $lightGreen, $blueGradient),
+              url("../src/assets/imgs/hero-1.svg") center no-repeat;
+  background-size:cover;
+  .header__logo-box{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    .header__logo{
+      height: 4rem;
+      animation: animateDown 1s ease-in-out;
+      transition: all 0.2s ease-out;
+      &:hover{
+        transform:rotate(-5deg);
+      }
+    }
+  }
+}
+.heading-primary--main{
+  color: $white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation: animateLeft 1.2s ease-out;
+  text-align: center;
+  backface-visibility: hidden;
+  font-family: $font;
+}
+.heading-primary--sub{
+  display: block;
+  letter-spacing: .9rem;
+  font-size: 1.16rem;
+  color: $white;
+  animation: animateRight 1.2s ease-out;
+  margin-bottom: 4rem;
+  margin-left: 0rem;
+  font-family: $font;
+}
+
+.header__text-box{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  .btn:link,
+  .btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 2.9rem;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s;
+    position:relative;
+    &:hover{
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(599, 105, 24, 0.4);
+    }
+    &:active{
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba(59, 105, 124, 0.4);
+    }
+  }
+  .btn--white{
+    color: $mainFontColor;
+    background: #fff;
+    border-radius: 10rem;
+    animation: animateUp 0.8s ease-out;
+    margin-left: -1rem;
+    font-size: 1rem;
+    font-family: $font;
+  }
+  .btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  .btn--white::after{
+    background: #fff;
+  }
+  .btn:hover::after{
+    transform:scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+ .btn--animated{
+   animation: animateUp 0.6s ease-out 0.5s;
+   animation-fill-mode: backwards;
+ }
+}
+
+@keyframes animateLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80%{
+    transform: translateX(1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes animateRight{
+  0%{
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80%{
+    transform: translateX(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
