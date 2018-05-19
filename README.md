@@ -39,8 +39,24 @@ eslint --ext .js,.vue src test/unit test/e2e/specs "--fix"
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+
+## Resources:
+
+General Vue.js intro: [this](https://frontstuff.io/build-your-first-vue-js-component)
+
+[Add event listener to vue component](
+https://forum.vuejs.org/t/attach-new-type-of-event-listeners-to-a-vue-component/5096/2)
+
+Vue lifecycle: [this](https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram),
+[this](https://stackoverflow.com/questions/40884194/vuejs-cant-access-refs-from-component),
+[this](https://forum.vuejs.org/t/solved-this-refs-key-returns-undefined-when-it-really-is/1226/7)
+
+Using refs to access components: [this](https://codingexplained.com/coding/front-end/vue-js/accessing-dom-refs)
+[this](https://laracasts.com/discuss/channels/vue/vue-component-selector-or-get-element)
+
+
 ### Other
 
-Images from [Vue Master](https://www.vuemastery.com/) front page.
+Front page images from [Vue Master](https://www.vuemastery.com/) front page.
 
-This is based on the Vue.js SPA tutorial in net 306.
+This is based on the Vue.js SPA tutorial in [net](https://www.creativebloq.com/net-magazine) 306. The [split-screen landing page](https://codepen.io/2975/pen/WdMMaR) from net 305 has been adapted to Vue.js.
