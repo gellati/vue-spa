@@ -1,9 +1,24 @@
 <template>
 <div class="container">
-<h1>Vue</h1>
-<router-link to="/header">Header</router-link>
-<router-link to="/split">Split screen</router-link>
-<router-link to="/animation">Animation</router-link>
+<h1><div class="front-header">Vue pages</div></h1>
+
+  <div class="projects">
+    <router-link to="/header">
+      <div class="project">
+        Header
+      </div>
+    </router-link>
+    <router-link to="/split">
+      <div class="project">
+        Split screen
+      </div>
+    </router-link>
+    <router-link to="/animation">
+      <div class="project">
+        Animation
+      </div>
+    </router-link>
+  </div>
 
 </div>
 </template>
@@ -14,3 +29,7 @@ export default{
     return {}
   }
 }
+
+<style lang="scss" scoped>
+  @import './src/assets/sass/front.sass'
+</style>
