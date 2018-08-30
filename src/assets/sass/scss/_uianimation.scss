@@ -1,0 +1,180 @@
+body {
+  background: linear-gradient(to right, $lightGreen, $blueGradient), url('https://image.ibb.co/mdDPU7/clouds_cornfield_countryside_158827.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+ }
+
+.team {
+    padding: 30px 0 40px;
+    margin-top: 60px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 25px 1px rgba(0,0,0,0.3);
+
+      .photo {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+  }
+
+.blue .photo:before {
+    content: "";
+    width: 100%;
+    height: 0px;
+    border-radius: 50%;
+    background: $blue;
+    position: absolute;
+    bottom: 130%;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all .3s linear 0.1s;
+}
+
+.team:hover .photo:before {
+   height: 100%;
+}
+
+.blue img:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: $blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.team .photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.blue:hover .photo img{
+    box-shadow: 0 0 0 14px $blue-border;
+    transform: scale(0.6);
+  }
+
+.profile-txt {
+  margin-bottom: 30px;
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    transition: all .6s;
+  }
+  .position{
+    display: block;
+    font-size: 1rem;
+    color: #555;
+  }
+}
+
+.blue .social-icons {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: $blue;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.6s ease;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 8px;
+      font-size: 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $blue;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.blue:hover .title {
+  color: $blue;
+  transition: all .6s;
+}
+
+.team:hover .social-icons {
+    bottom: 0px;
+}
+
+/***** Green ******/
+
+/**** Green border ******/
+.green:hover .photo img{
+    box-shadow: 0 0 0 14px $green-border;
+    transform: scale(0.6);
+    z-index: 2;
+  }
+.green:hover .title {
+  color: $green;
+  transition: all .6s;
+}
+.green .photo:before {
+    content: "";
+    width: 100%;
+    height: 0px;
+    border-radius: 50%;
+    background: $green;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    transform: scale(3);
+    transition: all .3s linear 0s;
+}
+
+.green .social-icons {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: $green;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.6s ease;
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+      padding: 8px;
+      font-size: 1rem;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $green;
+        background: #fff;
+      }
+    }
+  }
+}

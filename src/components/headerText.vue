@@ -18,7 +18,7 @@
       {{subTitle}}
     </span>
   </h1>
-  <router-link to="/split" class="btn btn--white btn--animated">Discover Vue</router-link>
+    <router-link to="/split" class="btn btn--white btn--animated">Discover Vue</router-link>
 </div>
 
 </header>
