@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import headerText from '@/components/headerText'
 import splitScreen from '@/components/splitScreen'
 import uiAnimation from '@/components/uiAnimation'
+import imageChanger from '@/components/imageChanger'
 import front from '@/components/frontPage'
 
 Vue.use(Router)
@@ -29,6 +30,11 @@ export default new Router({
       path: '/animation',
       name: 'UI Animation',
       component: uiAnimation
+    },
+    {
+      path: '/image',
+      name: 'Image changer',
+      component: imageChanger
     }
   ]
 })

@@ -18,6 +18,11 @@
         Animation
       </div>
     </router-link>
+    <router-link to="/image">
+      <div class="project">
+        Image changer
+      </div>
+    </router-link>
   </div>
 
 </div>
